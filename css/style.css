@@ -1,0 +1,24 @@
+h1{
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: large;
+    text-align-last: center;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+.container{
+    text-align: center;
+}
+
+h3{
+    color: deepskyblue;
+}
+
