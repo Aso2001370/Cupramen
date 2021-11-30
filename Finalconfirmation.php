@@ -1,6 +1,4 @@
 <?php require 'header.php';?>
-
-<form method="post" action="FinalconfirmationUPDATE.php" class="login">
 <h1>まだ注文は確定してません!</h1>
 <p>住所はお間違えないでしょうか</p>
 
