@@ -6,7 +6,8 @@
 
 <?php
 //セッションから取得（仮で2番にしている）
-    $id = $_POST['id'];
+session_start();
+    $id = $_SESSION['mail'];
     $pdo = new PDO('mysql:host=mysql154.phy.lolipop.lan;
 dbname=LAA1291596-katougumi;charset=utf8',
         'LAA1291596',
