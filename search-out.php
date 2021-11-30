@@ -4,8 +4,9 @@ $pdo=new PDO('mysql:host=mysql154.phy.lolipop.lan;
             dbname=LAA1291596-katougumi;charset=utf8',
     'LAA1291596',
     'katougumi');
+
 $sql=$pdo->prepare('select * from item where item_name like ?');
-$sql->execute(['%'.$_POST['key'].'%']);
+$sql->execute(['%'.$_POST['key-item_name'].'%']);
 
 foreach ($sql as $row) {
     echo'<form action="insert.php"method="post">';
@@ -27,6 +28,3 @@ foreach ($sql as $row) {
 $pdo=null;
 ?>
 <?php require '../footer.php';?>
-</body>
-</html>
-
