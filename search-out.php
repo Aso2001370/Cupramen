@@ -1,4 +1,5 @@
 <?php require 'header.php';?>
+
 <?php
 $pdo=new PDO('mysql:host=mysql154.phy.lolipop.lan;
             dbname=LAA1291596-katougumi;charset=utf8',

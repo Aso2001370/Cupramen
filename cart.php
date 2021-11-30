@@ -1,5 +1,5 @@
 <?php require 'header.php';?>
-<form method="post" action="Finalconfirmation.php" class="login">
+
     <?php
     if(isset($_SESSION['customer'])) {
         if (!empty($_SESSION['product'])) {
@@ -11,7 +11,7 @@
                 echo '<tr>';
                 echo '<td>', $id, '</td>';
 
-                echo '<td><a href="kensaku.php?id=', $id, '">',
+                echo '<td><a href="search-in.php?id=', $id, '">',
 
                 $product['item_name'], '</a></td>';
                 echo '<td>', $product['price'], '</td>';

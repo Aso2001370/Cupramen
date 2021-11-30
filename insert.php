@@ -1,6 +1,5 @@
 <?php session_start();?>
 <?php require 'header.php';?>
-
 <?php
 $id=$_POST['item_id'];
 if(!isset($_SESSION['product'])){
