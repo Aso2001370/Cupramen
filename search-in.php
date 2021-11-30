@@ -20,4 +20,4 @@
         </select>
         <button type="submit">検索</button>
     </form>
-<?php require '../footer.php';?>
+<?php require 'footer.php';?>

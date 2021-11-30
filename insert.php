@@ -18,4 +18,4 @@ echo'<p>カートに商品を追加しました。</p>';
 echo '<hr>';
 require 'cart.php';
 ?>
-<?php require '../footer.php';?>
+<?php require 'footer.php';?>
