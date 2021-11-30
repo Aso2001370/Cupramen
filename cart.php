@@ -1,7 +1,5 @@
 <?php require 'header.php';?>
-
     <?php
-    if(isset($_SESSION['customer'])) {
         if (!empty($_SESSION['product'])) {
             echo '<table>';
             echo '<th>商品番号</th><th>商品名</th>';
@@ -10,9 +8,7 @@
             foreach ($_SESSION['product'] as $id => $product) {
                 echo '<tr>';
                 echo '<td>', $id, '</td>';
-
                 echo '<td><a href="search-in.php?id=', $id, '">',
-
                 $product['item_name'], '</a></td>';
                 echo '<td>', $product['price'], '</td>';
                 echo '<td>', $product['count'], '</td>';
@@ -26,10 +22,9 @@
             }
             echo '<tr><td>合計</td><td></td><td></td><td><td><td>', $total,
             '</td><td></td></tr>';
-            echo '</tsble>';
+            echo '</table>';
         } else {
             echo 'カートに商品がありません。';
-        }
     }
 
 ?>
