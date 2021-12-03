@@ -6,8 +6,7 @@
 
 <?php
 //セッションから取得（仮で2番にしている）
-
-    $id = 2;
+    $id = $_POST['id'];
     $pdo = new PDO('mysql:host=mysql154.phy.lolipop.lan;
 dbname=LAA1291596-katougumi;charset=utf8',
         'LAA1291596',
@@ -26,8 +25,8 @@ dbname=LAA1291596-katougumi;charset=utf8',
     }
 ?>
 
-<input type="button" onclick="location.href='END.php'" value="はい">
-    <input type="button" onclick="location.href='home.php'" value="いいえ">
+<input type="button" onclick="location.href='orderEnd2.php'" value="はい">
+<input type="button"　class="text1" onclick="history.back()" value="いいえ">
 </form>
 
 <?php require 'footer.php'; ?>
