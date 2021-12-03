@@ -1,5 +1,6 @@
 <?php session_start();?>
 <?php require 'header.php';?>
+
 <?php
 $id=$_POST['item_id'];
 if(!isset($_SESSION['product'])){
@@ -18,4 +19,4 @@ echo'<p>カートに商品を追加しました。</p>';
 echo '<hr>';
 require 'cart.php';
 ?>
-<?php require 'footer.php';?>
+<?php require '../footer.php';?>

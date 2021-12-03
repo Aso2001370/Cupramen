@@ -18,7 +18,18 @@ p{
     text-align: center;
 }
 
-h3{
+h3 {
     color: deepskyblue;
 }
+.login{
+    text-align: center;
+}
+.image{
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    width: auto;
+    height: auto;
+}
 
+.img{
+    text-align: center;
+}
