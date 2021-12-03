@@ -6,8 +6,10 @@ $pdo=new PDO('mysql:host=mysql154.phy.lolipop.lan;
     'LAA1291596',
     'katougumi');
 
-$sql=$pdo->prepare('select * from item where item_name like ?');
-$sql->execute(['%'.$_POST['key-item_name'].'%']);
+$sql=$pdo->prepare('select fk.name as category_id,fkc.constraint_column_id as category_id,
+       ,pt.name as item_category,pc.name as category_id,rt.name as item ,rc.name as category_id
+       from sys.foreign_keys AS fkwhere category_name like ?');
+$sql->execute(['%'.$_POST['key-category_name'].'%']);
 
 foreach ($sql as $row) {
     echo'<form action="insert.php"method="post">';
