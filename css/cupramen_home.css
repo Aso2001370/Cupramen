@@ -1,0 +1,26 @@
+
+
+@media screen and (min-width: 960px) {
+    img {
+        max-width: 500px;
+    }
+}
+
+h1 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    font-family: Hiragino Mincho ProN;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    color: red;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+}
